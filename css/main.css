@@ -1,0 +1,309 @@
+body {
+  background: #e5e5e5;
+  color: #333333;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  display: block;
+}
+
+.wrapper {
+  max-width: 1310px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+.timeShow .stopwatch {
+  width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 55px;
+  position: relative;
+}
+.timeShow .stopwatch .timecounter {
+  position: absolute;
+  left: 100px;
+}
+.timeShow .stopwatch .timecounter h1#time {
+  display: block;
+  width: 100%;
+  color: #fff;
+  background: #999;
+  font-size: 32px;
+  padding: 0 10px;
+  line-height: 40px;
+  font-family: "Pathway Gothic One", sans-serif;
+  text-align: center;
+  font-weight: normal;
+}
+.timeShow .stopwatch .sec1 {
+  position: absolute;
+  left: 220px;
+}
+.timeShow .stopwatch .sec1 #button1 {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  border: 1px solid #CCC;
+  box-sizing: border-box;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.timeShow .stopwatch .sec1 #buttonstart {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  border: 1px solid #CCC;
+  box-sizing: border-box;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: red;
+}
+
+.main {
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.toolbox-wrapper {
+  height: 30px;
+  line-height: 30px;
+  border-top: 1px solid #b2b2b2;
+}
+.toolbox-wrapper #tools-box {
+  display: block;
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 5px 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+}
+
+.showtimer, .showset {
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.setswrapper {
+  width: 420px;
+  height: auto;
+  margin: 0 auto;
+  min-height: 55px;
+  text-align: center;
+}
+.setswrapper .set {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 2px 2px 0;
+  background-color: gray;
+  color: #fff;
+  cursor: pointer;
+}
+.setswrapper .set.on {
+  background-color: red;
+}
+
+.infobox {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0 0 0;
+  margin: -5px 0 0 0;
+  width: 100%;
+  background: #e8e8e8 url(/images/infobox/infobox.png);
+  background-repeat: repeat-x;
+}
+.infobox .infobox-map {
+  width: 33%;
+  float: left;
+  background: #e8e8e8 url(/images/infobox/ww.jpg);
+  background-repeat: no-repeat;
+  padding-left: 80px;
+}
+.infobox .infobox-works {
+  width: 20%;
+  float: left;
+}
+.infobox .infobox-focus {
+  width: 20%;
+  float: left;
+}
+.infobox .infobox-difficulty {
+  width: 20%;
+  float: left;
+}
+
+.header {
+  height: 70px;
+  margin-bottom: 5px;
+}
+.header .logo {
+  display: block;
+  height: 55px;
+  float: left;
+  padding: 14px 5px 0 0;
+}
+.header .bookmarks {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header .topmenu {
+  display: block;
+}
+.header .topmenu ul {
+  display: block;
+  font-family: "Pathway Gothic One", sans-serif;
+  float: right;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.header .topmenu ul li {
+  display: inline-block;
+  height: 43px;
+  box-sizing: border-box;
+  position: relative;
+  right: 250px;
+  top: 10px;
+  margin: 0 0 0 60px;
+}
+.header .topmenu ul li a {
+  width: 100%;
+  font-size: 32px;
+  padding: 0 30px;
+  color: #141414;
+  box-sizing: border-box;
+}
+.header .topmenu ul li a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 3px;
+  background-color: red;
+  transition: all 0.3s;
+}
+.header .topmenu ul li a:hover:after {
+  width: 50%;
+}
+.header .topmenu ul li a:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 3px;
+  background-color: red;
+  transition: all 0.3s;
+}
+.header .topmenu ul li a:hover:before {
+  width: 50%;
+}
+
+.homepage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.homepage #exercise {
+  grid-row: 1/3;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 70px;
+  font-weight: bold;
+  color: #141414;
+  font-family: cursive;
+  font-size: 32px;
+}
+
+.daily figure.item_image {
+  background-image: url(https://darebee.com/templates/darebee/images/dailydare.jpg);
+  text-align: center;
+}
+.daily .timerbody {
+  min-height: 30px;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  border-top: 1px solid #b2b2b2;
+  font-family: "Roboto Slab", serif;
+}
+.daily .timerbody .timerbox {
+  text-align: center;
+  margin: 0 auto;
+  width: 420px;
+}
+.daily .timerbody .timerbox a {
+  color: #666;
+  font-weight: bold;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.workouts_main .item_category {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.workouts_main .item_category .item {
+  padding-right: 0.5%;
+  padding-top: 0.5%;
+  width: 24%;
+}
+
+.workout1 figure.item_image {
+  background-image: url(/images/darebg.jpg);
+  text-align: center;
+}
+.workout1 .timecounter {
+  margin-left: 40px;
+}
+.workout1 .sec1 {
+  margin-left: 30px;
+}
+
+.workout2 figure.item_image {
+  background-image: url(/images/darebg.jpg);
+  text-align: center;
+}
+.workout2 #tools-box {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.workout2 .timecounter {
+  margin-left: 40px;
+}
+.workout2 .sec1 {
+  margin-left: 30px;
+}/*# sourceMappingURL=main.css.map */
